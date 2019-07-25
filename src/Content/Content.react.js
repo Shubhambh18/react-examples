@@ -1,5 +1,7 @@
 import React from 'react';
-
+import ShowDonor from '../ShowDonor/ShowDonor.react';
+import Search from '../Search/Search.react';
+import Blog from '../Blog/Blog.react';
 
 
 const Content = (props) => {
@@ -11,7 +13,7 @@ const Content = (props) => {
           
             
             <h2>{props.request.location}</h2>
-            <ol>
+            <ol >
                 <li>
                     <span >
                         <img src={props.request.imgRef} alt='opos'/>
@@ -19,6 +21,9 @@ const Content = (props) => {
                             </span>
                 </li>
             </ol>
+           <ShowDonor title={'Star Donors'}></ShowDonor>
+           <Search></Search>
+           <Blog></Blog> 
         </div>
     );
 
