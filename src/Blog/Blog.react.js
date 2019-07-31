@@ -10,7 +10,9 @@ class Blog extends React.Component {
             likeCount:1,
             unLikeCount:1
         }
+        this.state={items:[]};
     }
+ 
 
     increamentLikes=()=>{
         console.log("Like Button Hit")
@@ -44,6 +46,7 @@ class Blog extends React.Component {
                        <span> Likes : </span> {this.state.likeCount} <br/><br/>
                        <span> DisLikes : </span> {this.state.unLikeCount} <br/><br/>
                         <FeedBack action={this.increamentLikes} action2={this.increamentDisLikes}></FeedBack>
+                   
 
                        {/* <button className='fa fa-thumbs-up' onClick={this.increament}></button> */}
                     </p>

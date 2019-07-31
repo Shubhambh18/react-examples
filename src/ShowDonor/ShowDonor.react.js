@@ -18,8 +18,9 @@ const ShowDonor = (props) => {
                 <thead>
                     <tr>
                         <th>Donor Name</th>
-                        <th>Phone No</th>
+                        
                         <th>Blood Group</th>
+                        <th>Phone No</th>
                         <th>Donated Units</th>
                     </tr>
                 </thead>
